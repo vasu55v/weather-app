@@ -1,0 +1,75 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  backdrop-filter: blur(20px);
+}
+
+.main_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background:linear-gradient(30deg,rgb(231, 156, 27),rgb(33, 33, 251));
+/* background-color: aliceblue; */
+}
+
+.main{
+  height: 550px;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 6px 5px 9px 5px #00000038;
+  background: transparent;
+}
+
+.sec_container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.sec_container span{
+  color: #483939;
+}
+
+.temp_con{
+  text-align: center;
+}
+
+.main h3{
+  font-size: 30px;
+  text-align: center;
+  margin-top:0px;
+}
+
+.main input{
+  padding: 10px 40px;
+  margin-left: 5px;
+  border-radius: 50px;
+  background-color: transparent;
+  border:none;
+  box-shadow: 4px 4px 8px 3px #00000042;
+}
+
+.btn{
+  padding:10px 60px;
+  border-radius: 50px;
+  background: linear-gradient(16deg,#ffffff,#00000029);
+  margin-left: 8px;
+  border:none;
+  box-shadow: 4px 4px 8px 3px #00000042;
+}
+
+.btn img{
+color: #000;
+}
+
+.temp{
+  font-size: 40px;
+}
+
+.img_container{
+  text-align: center;
+}
