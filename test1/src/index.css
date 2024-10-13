@@ -19,7 +19,8 @@ body{
   width: 400px;
   border-radius: 20px;
   box-shadow: 6px 5px 9px 5px #00000038;
-  background: transparent;
+  background: #c8c8c84e;
+  /* background:linear-gradient(30deg,rgb(231, 156, 27),rgb(33, 33, 251)); */
 }
 
 .sec_container{

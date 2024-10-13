@@ -53,18 +53,18 @@ function App() {
     <div className='main_container'>
          <div className='main'>
           <div className='search-div'>
-          <h3><span style={{color:'#483939'}}>City</span>:{city}</h3>
-          <input type='text' id='city' value={city} onChange={(e)=>setCity(e.target.value)}/>
+          <h3><span style={{color:'#483939'}}>City</span>:{!city && "Your city"}{city}</h3>
+          <input type='text' id='city' onChange={(e)=>setCity(e.target.value)}/>
           <button className='btn' onClick={execute}><img src={Search} width={10} /></button>
           </div>
           <h1 className='temp_con'>
             Temperature
             <br />
-          <span className='temp'>{temp}C</span>
+          <span className='temp'>{!temp && "00"}{temp}C</span>
           </h1>
           <div className='sec_container'>
-            <h4><span>Wind</span><br />{wind}MPH&nbsp;<img src={WindImg} width={20}/></h4>
-            <h4><span>Humidity</span><br />{humidity}%&nbsp;<img src={Humidity} width={20}/></h4>
+            <h4><span>Wind</span><br />{!wind && "00.00"}{wind}MPH&nbsp;<img src={WindImg} width={20}/></h4>
+            <h4><span>Humidity</span><br />{!humidity && "0.00"}{humidity}%&nbsp;<img src={Humidity} width={20}/></h4>
           </div>
           <div className='img_container'>
             {cloud==="Mist" &&
